@@ -1,0 +1,5 @@
+db:
+  username: "Dev admin"
+  password: "Dev secret"
+  url: "jdbc:mysql://localhost:3306/dev-mydb"
+  connection: "jdbc:mysql://localhost:3306/dev-mydb?user=${db.username}&password=${db.password}"
