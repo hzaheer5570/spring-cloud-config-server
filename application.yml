@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: spring-boot-config
+#  profiles:
+#    active: dev, test
+
+greet:
+  message: "Hello from Configuration file"
+  messages: "Hello1,Hello2,Hello3"
+  map: "{key1:'value1',key2:'value2',key3:'value3'}"
+
+db:
+  username: "admin"
+  password: "secret"
+  url: "jdbc:mysql://localhost:3306/mydb"
+  connection: "jdbc:mysql://localhost:3306/mydb?user=${db.username}&password=${db.password}"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+    configprops:
+      show-values: ALWAYS
