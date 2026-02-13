@@ -1,5 +1,5 @@
 greet:
-  message: "Hello from Config Server"
+  message: "Hello from Config Server updated just now"
   messages: "Hello1,Hello2,Hello3"
   map: "{key1:'value1',key2:'value2',key3:'value3'}"
 
@@ -8,3 +8,4 @@ db:
   password: "git-secret"
   url: "jdbc:mysql://localhost:3306/git-mydb"
   connection: "jdbc:mysql://localhost:3306/git-mydb?user=${db.username}&password=${db.password}"
+
