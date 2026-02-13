@@ -8,11 +8,3 @@ db:
   password: "git-secret"
   url: "jdbc:mysql://localhost:3306/git-mydb"
   connection: "jdbc:mysql://localhost:3306/git-mydb?user=${db.username}&password=${db.password}"
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
-    configprops:
-      show-values: ALWAYS
