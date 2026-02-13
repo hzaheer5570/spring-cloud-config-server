@@ -1,11 +1,12 @@
 greet:
-  message: "Hello from Config Server updated just now"
+  message: "Hello from Config Server updated twice"
   messages: "Hello1,Hello2,Hello3"
   map: "{key1:'value1',key2:'value2',key3:'value3'}"
 
 db:
-  username: "git-admin"
+  username: "update-git-admin"
   password: "git-secret"
   url: "jdbc:mysql://localhost:3306/git-mydb"
   connection: "jdbc:mysql://localhost:3306/git-mydb?user=${db.username}&password=${db.password}"
+
 
