@@ -5,8 +5,9 @@ greet:
 
 db:
   username: "update-git-admin"
-  password: "git-secret"
+  password: "{cipher}887acb766f63f508e4d98b91fbee22f729b8e13f0badf9be99b9ed3047e54b7d"
   url: "jdbc:mysql://localhost:3306/git-mydb"
   connection: "jdbc:mysql://localhost:3306/git-mydb?user=${db.username}&password=${db.password}"
+
 
 
